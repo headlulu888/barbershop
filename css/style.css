@@ -15,7 +15,7 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
 
   color: #fff;
-  background: #000000 url("../img/tint.jpg") no-repeat center top;
+  background: #000000 url("../img/tint.png") no-repeat center top;
 }
 
 .clearfix::after {
