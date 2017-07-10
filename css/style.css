@@ -1,6 +1,6 @@
 html,
 body {
-  min-height: 1750px;
+  /*min-height: 1750px;*/
   min-width: 1122px;
   margin: 0;
   padding: 0;
@@ -18,6 +18,63 @@ body {
   background: #000000 url("../img/tint.png") no-repeat center top;
 }
 
+.inner-page {
+  color: #000000;
+  background: #f8f3f0 url("../img/bg-main.png") repeat;
+}
+
+.inner-page-title {
+  margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+
+.breadcrumbs a {
+  color: #000;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
 .clearfix::after {
   content: "";
 
@@ -25,13 +82,16 @@ body {
   clear: both;
 }
 
+/*header*/
+
 .main-header {
   margin-bottom: 60px;
-
-  color: #fff;
   background-color: #000;
+  color: #fff;
+}
 
-  /*min-height: 70px;*/
+.inner-page .main-header {
+  margin-bottom: 55px;
 }
 
 .container {
@@ -44,6 +104,47 @@ body {
   float: left;
   width: 780px;
   min-height: 70px;
+}
+
+.main-navigation .logo-inner {
+  float: left;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+
+.main-navigation .logo-inner img {
+  width: 111px;
+  height: 24px;
+}
+
+.main-navigation .logo-inner:hover {
+  background: none;
+}
+
+.main-navigation .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-navigation .active span {
+  display: block;
+  padding: 25px 20px;
+  /*color: #fff;*/
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.main-navigation .active a:hover {
+  background: none;
 }
 
 .main-navigation ul {
@@ -107,6 +208,8 @@ body {
   background: url(../img/icon-login.png) no-repeat;
   opacity: 0.3;
 }
+
+/*logo*/
 
 .index-logo {
   width: 368px;
@@ -310,12 +413,135 @@ body {
   border: 2px solid #663d15;
 }
 
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h2 + h3 {
+  margin-top: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid #000;
+}
+
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  background: red;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  z-index: 2;
+  background: #f8f3f0 url("../img/bg-main.png")
+}
+
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -22px;
+  z-index: 1;
+  display: block;
+  border-bottom: 2px solid #000;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+.short-text {
+  padding-right: 80px;
+}
+
+.inner-columns {
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+.inner-column-left {
+  float: left;
+}
+
+.inner-column-right {
+  float: right;
+}
+
 .main-footer {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
   color: #fff;
-  background: #252525 url("../img/bg-header-footer.png")
+  background: #252525 url("../img/bg-header-footer.png");
+  box-shadow: inset 0px 30px 40px -15px #000;
 }
 
 .footer-contacts {
@@ -337,13 +563,13 @@ body {
   float: left;
   width: 180px;
   min-height: 90px;
+  text-align: center;
+
 }
 
 .footer-social p {
   margin: 0;
   margin-bottom: 15px;
-  text-align: center;
-
 }
 
 .social-btn {
@@ -351,49 +577,59 @@ body {
   width: 43px;
   height: 43px;
   margin: 0 2px;
+
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
-  background: #000000 url("../img/facebook.png") no-repeat center;
+  outline: none;
 
-  /*transition:
-    background-position 0.5s,
-    background-color 0.5s;*/
+  background: #000000 url("../icon/spritesheet.png") no-repeat center;
+
+  transition: background 0.25s linear;
+
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: #fff;
 }
 
 .social-btn-vk {
-  /*background-position: 9px -447px;*/
+  background-position: -13px -309px;
 }
 
 .social-btn-fb {
-  /*background-position: 15px -171px;*/
+  background-position: -5px -73px;
 }
 
 .social-btn-inst {
-  /*background-position: 12px 313px;*/
+  background-position: -9px -134px;
 }
 
-.social-btn-vk:hover {
-  /*background-position: 9px -447px;*/
+.social-btn-vk:hover,
+.social-btn-vk:focus {
+background-position: -12px -253px;
 }
 
-.social-btn-fb:hover {
-  /*background-position: 15px -171px;*/
+.social-btn-fb:hover,
+.social-btn-fb:focus {
+  background-position: -6px -11px;
 }
 
-.social-btn-inst:hover {
-  /*background-position: 12px 313px;*/
+.social-btn-inst:hover,
+.social-btn-inst:focus {
+  background-position: -9px -195px;
 }
 
 .footer-copyright {
   float: right;
   width: 180px;
+  text-align: center;
 }
 
 .footer-copyright p {
   margin: 0;
   margin-bottom: 15px;
-  text-align: center;
 }
 
 .footer-copyright .btn {
