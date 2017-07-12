@@ -16,11 +16,13 @@ body {
 
   color: #fff;
   background: #000000 url("../img/tint.png") no-repeat center top;
+  text-transform: uppercase;
 }
 
 .inner-page {
   color: #000000;
   background: #f8f3f0 url("../img/bg-main.png") repeat;
+  text-transform: uppercase;
 }
 
 .inner-page-title {
@@ -831,6 +833,83 @@ background-position: -12px -253px;
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
+}
+
+.inner-item-left {
+  float: left;
+  width: 462px;
+  margin-right: 90px;
+}
+
+.inner-item-right {
+  float: right;
+  width: 385px;
+}
+
+.inner-item-zag {
+  margin-bottom: 37px;
+}
+
+.inner-item-zag .inner-item-stock {
+  float: left;
+}
+
+.inner-item-zag .inner-item-arc {
+  float: right;
+  color: #aba9a7;
+}
+
+.inner-item-about {
+  text-transform: uppercase;
+}
+
+.inner-item-button {
+  float: left;
+  padding: 15px 27px;
+  background-color: #e5e5e5;
+}
+
+.inner-item-price {
+  margin-top: 16px;
+  margin-bottom: 65px;
+}
+
+.about-btn {
+  float: left;
+  padding: 15px 27px;
+}
+
+.inner-item-set h2 {
+  margin-bottom: 34px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.inner-item-list {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.inner-item-list li {
+  padding-left: 21px;
+  position: relative;
+}
+
+.inner-item-list li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.inner-item-imgsmall {
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes bounce {

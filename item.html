@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
   <!-- header -->
   <header class="main-header">
     <div class="container clearfix">
       <nav class="main-navigation">
         <ul>
+          <li><a href="#">Главная</a></li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="#" class="active">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -26,89 +27,59 @@
     </div>
   </header>
   <!-- logo -->
+ 
   <main class="container">
-    <div class="index-logo">
-      <img src="img/logo-main.png" width="368" height="204" alt="Барбершоп - Бородинский">
-    </div>
-    <!-- 3 column -->
-    <section class="features clearfix">
-      <div class="features-item">
-        <b class="features-name">Быстро</b>
-        <p>
-          Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
-        </p>
-      </div>
-      <div class="features-item">
-        <b class="features-name">Круто</b>
-        <p>
-           Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
-        </p>
-      </div>
-      <div class="features-item">
-        <b class="features-name">Дорого</b>
-        <p>
-          Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
-        </p>
-      </div>
-    </section>
-    <!-- news and photo -->
-    <div class="index-content clearfix">
-      <div class="index-content-left">
-        <h2 class="index-content-title">Новости</h2>
-        <ul class="news-preview">
-            <li>
-              <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-              <time datetime="2017-07-07">7 июля</time>
-            </li>
-            <li>
-              <p>В нашей команде пополнение, Борис Бритва Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-              <time datetime="2017-07-17">17 июля</time>
-            </li>
+      <div class="inner-page-title">
+        <h1>Набор для путешествий «Baxter of California»</h1>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Средства для ухода</a>
+          </li>
+          <li class="current">Набор для путешествий «Baxter of California»</li>
         </ul>
-        <a href="#" class="btn">Все новости</a>
       </div>
-      <div class="index-content-right">
-        <h2 class="index-content-title">Фотогалерея</h2>
-        <div class="gallery">
-          <figure class="gallery-content">
-            <img src="img/barb-1.jpg" width="286" height="164" alt="">
-          </figure>
-          <button class="btn gallery-prev">Назад</button>
-          <button class="btn gallery-next">Вперед</button>
+      <div class="inner-items clearfix">
+        <div class="inner-item-left">
+          <div class="inner-item-imgbig">
+            <img src="img/big-item.png" alt="Большая картинка товара" width="460" height="500">
+          </div>
+          <div class="inner-item-imgsmall">
+            <img src="img/item_1.png" alt="Первая маленькая картинка" width="142" height="150">
+            <img src="img/item_2.png" alt="Вторая маленькая картинка" width="142" height="150">
+            <img src="img/item_3.png" alt="Третья маленькая картинка" width="142" height="150">
+          </div>
+        </div>
+        <div class="inner-item-right">
+          <div class="inner-item-about">
+            <div class="inner-item-zag clearfix">
+              <span class="inner-item-stock">Есть в наличии</span>
+              <span class="inner-item-arc">Артикул:Dexter-AE</span>
+            </div>
+            <p>Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожанной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: Средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь, набор также может стать отличным подарком.</p>
+            <div class="inner-item-price clearfix">
+              <div class="inner-item-button">2900 руб</div>
+              <a href="#" class="btn about-btn">Купить</a>
+            </div>
+          </div>
+          <div class="inner-item-set">
+            <h2>В набор входят:</h2>
+            <ul class="inner-item-list">
+              <li>Средство для умывания (50 мл)</li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритью, шампунь (50 мл)</li>
+              <li>Удобная косметичка</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="index-content clearfix">
-      <div class="index-content-left">
-        <h2 class="index-content-title">Контактная информация</h2>
-        <p>
-          Барбершоп - (Бородинский)<br>
-          Адресс: г.Санкт-Петербург, Б. Конюшенная, д.19/8<br>
-          Телефон: +7(812) 666-02-66
-        </p>
-        <p>
-          Время работы:<br>
-          пн - пт: с 10:00 до 22:00<br>
-          сб - вс: с 10:00 до 19:00
-        </p>
-        <a href="#" class="btn js-open-map">Как проехать</a>
-        <a href="#" class="btn">Обратная связь</a>
-      </div>
-      <div class="index-content-right">
-        <h2 class="index-content-title">Записаться</h2>
-        <p>
-          Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
-        </p>
-        <form action="#" class="appointment-form" method="post">
-          <input type="text" name="date" value="" placeholder="Дата">
-          <input type="text" name="time" value="" placeholder="Время">
-          <input type="text" name="name" value="" placeholder="Ваше имя">
-          <input type="tel" name="phone" value="" placeholder="Телефон">
-          <button class="btn" type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </main>
+    </main>
+
   <!-- footer -->
   <footer class="main-footer">
     <div class="container clearfix">
