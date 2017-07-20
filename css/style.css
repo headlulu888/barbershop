@@ -931,7 +931,11 @@ background-position: -12px -253px;
   width: 700px;
   height: 687px;
   float: right;
+<<<<<<< HEAD
   background-color: blue;
+=======
+  /*background-color: blue;*/
+>>>>>>> 683a5d14a475add4e87af2764b708f5a5c90486f
 }
 
 .shop-nav__items {
@@ -944,6 +948,7 @@ background-position: -12px -253px;
 .shop-item {
   width: 220px;
   height: 287px;
+<<<<<<< HEAD
   background-color: gray;
 }
 
@@ -952,6 +957,63 @@ background-position: -12px -253px;
   height: 166px;
   background-color: red;
 
+=======
+}
+
+.shop-item__img {
+  width: 220px;
+  height: 166px;
+}
+
+.shop-item__info {
+  width: 220px;
+  height: 121px;
+  background-color: #ffffff;
+  padding: 16px 17px;
+  box-sizing: border-box;
+}
+
+.shop-item__info span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+
+.shop-item__buy {
+  float: left;
+  padding: 10px 10px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 78px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s linear;
+}
+
+.shop-item__buy:hover {
+  background-color: #663d15;
+}
+
+.shop-item__price {
+  width: 109px;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px 10px;
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.shop-item__btn {
+  width: 187px;
+  height: 43px;
+}
+
+.shop-item__img img {
+  width: 100%;
+  height: 100%;
+>>>>>>> 683a5d14a475add4e87af2764b708f5a5c90486f
 }
 
 .shop-button__list {
@@ -964,9 +1026,31 @@ background-position: -12px -253px;
 }
 
 .shop-button__item {
+<<<<<<< HEAD
   width: 43px;
   height: 43px;
   background-color: black;
+=======
+  box-sizing: border-box;
+  padding: 8px 5px;
+  width: 43px;
+  height: 43px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .2s linear;
+}
+
+.shop-button__item:hover {
+  background-color: #663d15;
+  /*color: #000;*/
+}
+
+.shop-button__item--active {
+  background-color: #ffffff;
+  color: #000;
+>>>>>>> 683a5d14a475add4e87af2764b708f5a5c90486f
 }
 
 .shop-form fieldset {
